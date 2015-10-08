@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AdcashSDK"
-  s.version      = "1.2"
+  s.version      = "1.3.0"
   s.summary      = "This is the iOS SDK of Adcash OU advertising network."
 
   # s.description  = <<-DESC
@@ -130,6 +130,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency 'AFNetworking', '~> 2.5'
+  s.dependency 'AFNetworking', '~> 2.5.0'
 
 end

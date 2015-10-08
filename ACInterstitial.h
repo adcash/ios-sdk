@@ -73,6 +73,10 @@
  @brief  Sent when the app is about the enter in background because the user
  has clicked on an ad that navigates outside of the app to another application (e.g. App Store).
  Method `applicationDidEnterBackground:` of your app delegate is called immediately after this.
+ @note The method is called before calling `[[UIApplication sharedApplication] openURL:]`.
+ Therefore, the application will not enter in background if `openURL:` does not succeed.
+ Do not rely on the assumption that `interstitialWillLeaveApplication:` will always be followed by
+ entering the application in background mode.
  
  @param interstitial An ACInterstitial instance.
  
