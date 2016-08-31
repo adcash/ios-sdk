@@ -262,7 +262,7 @@ Conversion tracking allows advertisers to track user actions on their app(e.g. a
 
 You can easily integrate conversion tracking into your app with the Adcash iOS SDK or by manually sending a server-to-server request to a provided URL.
 
-###Adcash iOS SDK Tracking
+###Server-to-server (S2S) Tracking
 
 To help launch CPI campaigns, we provide the capability to send Install tracking information via a server-to-server integration so that advertiser apps do not need to be updated specifically for Adcash ads.
 
