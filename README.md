@@ -26,7 +26,7 @@ And also if you are an advertiser, Conversion Tracking section is for you.
 
 **Prerequisites**
 * Zone ID(s) that you created at [Adcash platform](https://www.myadcash.com/)
-* [Adcash iOS SDK](https://github.com/adcash/ios-sdk/blob/master/AdcashSDKiOS_beta.zip)
+* [Adcash iOS SDK](https://github.com/adcash/ios-sdk/raw/master/AdcashSDKiOS.zip)
 * Xcode 5 or higher
 * Project deployment target iOS 6.0 or higher
 
@@ -36,7 +36,7 @@ And also if you are an advertiser, Conversion Tracking section is for you.
 
 **Manual Integration :**
 
-1. Download the [Adcash iOS SDK](https://github.com/adcash/ios-sdk/blob/master/AdcashSDKiOS_beta.zip) and unzip it.
+1. Download the [Adcash iOS SDK](https://github.com/adcash/ios-sdk/raw/master/AdcashSDKiOS.zip) and unzip it.
 2. Right click on your project in the **Project Navigator** menu and select **Add Files to "name-of-your-project"**:
 ![Alt text](http://i2.wp.com/104.197.107.57/wp-content/uploads/2015/08/install-instructions-2.png)
 3. Select the AdcashSDK folder you just unzipped and press **Add**. Make sure you choose **Copy items if needed**.
@@ -113,7 +113,7 @@ Height | Device | Device Orientation
    [bannerView load];
    ```
    
-   4. (Optional)You can catch status updates from your banner by implementing the optional methods in ADCBannerViewDelegate protocol:
+   4. _**Optional**_ You can catch status updates from your banner by implementing the optional methods in ADCBannerViewDelegate protocol:
      ```objc
       -(void) bannerViewDidReceiveAd: (ADCBannerView *)bannerView;
       -(void) bannerView: (ADCBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error;
@@ -161,7 +161,7 @@ self.interstitial.delegate = self;
 [interstitial presentFromRootViewController:self];
 } 
    ```
-   5. (Optional)You can catch other status updates of your interstitial by implementing the optional methods in ADCInterstitialDelegate protocol;
+   5. _**Optional**_ You can catch other status updates of your interstitial by implementing the optional methods in ADCInterstitialDelegate protocol;
    
    ```objc
       -(void) interstitialDidReceiveAd: (ADCInterstitial *)interstitial;
@@ -197,7 +197,7 @@ Video advertisements are full screen ad formats that can be displayed either hor
    //Assign ADCVideo instance to your property.
 self.video = [[ADCVideo alloc] initVideoWithZoneID:@“<YOUR_ZONE_ID>”];
    ```
-    4. (Optional)You can catch status updates from your video by implementing the optional methods in  ADCVideoDelegate protocol:
+    4. _**Optional**_ You can catch status updates from your video by implementing the optional methods in  ADCVideoDelegate protocol:
     ```objc
     -(void) videoDidReceiveAd: (ADCVideo *)video;
     -(void) videoDidFailToReceiveAd:(ADCVideo *)video withError:(NSError *)error;
