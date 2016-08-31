@@ -197,7 +197,7 @@ Video advertisements are full screen ad formats that can be displayed either hor
    //Assign ADCVideo instance to your property.
 self.video = [[ADCVideo alloc] initVideoWithZoneID:@“<YOUR_ZONE_ID>”];
    ```
-    4. (Optional)You can catch status updates from your banner by implementing the optional methods in  ADCBannerViewDelegate protocol:
+    4. (Optional)You can catch status updates from your video by implementing the optional methods in  ADCVideoDelegate protocol:
     ```objc
     -(void) videoDidReceiveAd: (ADCVideo *)video;
     -(void) videoDidFailToReceiveAd:(ADCVideo *)video withError:(NSError *)error;
