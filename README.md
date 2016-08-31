@@ -26,7 +26,7 @@ And also if you are an advertiser, Conversion Tracking section is for you.
 
 **Prerequisites**
 * Zone ID(s) that you created at [Adcash platform](https://www.myadcash.com/)
-* [Adcash iOS SDK](https://github.com/adcash/ios-sdk/raw/release/2.0.0-beta/AdcashSDKiOS_beta.zip)
+* [Adcash iOS SDK](https://github.com/adcash/ios-sdk/blob/master/AdcashSDKiOS_beta.zip)
 * Xcode 5 or higher
 * Project deployment target iOS 6.0 or higher
 
@@ -36,8 +36,8 @@ And also if you are an advertiser, Conversion Tracking section is for you.
 
 **Manual Integration :**
 
-1. Download the [Adcash iOS SDK(beta)](https://github.com/adcash/ios-sdk/raw/release/2.0.0-beta/AdcashSDKiOS_beta.zip) and unzip it.
-2. Right click on your project in the **Project Navigator** menu and select **Add Files to "name-of-your-project"** :
+1. Download the [Adcash iOS SDK](https://github.com/adcash/ios-sdk/blob/master/AdcashSDKiOS_beta.zip) and unzip it.
+2. Right click on your project in the **Project Navigator** menu and select **Add Files to "name-of-your-project"**:
 ![Alt text](http://i2.wp.com/104.197.107.57/wp-content/uploads/2015/08/install-instructions-2.png)
 3. Select the AdcashSDK folder you just unzipped and press **Add**. Make sure you choose **Copy items if needed**.
 ![Alt text](http://i2.wp.com/104.197.107.57/wp-content/uploads/2015/08/install-instructions-3.png)
@@ -284,7 +284,7 @@ The post-back URL will depend on the tracking option you choose. Example URLs of
 
 **2. Multiple Campaigns**
 
- > http://imcounting.com/ad/event.php?type=Installation&list=2253241,226453&cid=12356&udid=549B0538-5B7D-4C93-ACDA-FE79583ED645&variable= XX
+ > http://imcounting.com/ad/event.php?type=Installation&list=2253241,226453&cid=12356&udid=549B0538-5B7D-4C93-ACDA-FE79583ED645&variable=XX
 
 **3. Global Campaigns**
 
