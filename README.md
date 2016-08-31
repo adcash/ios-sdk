@@ -2,12 +2,13 @@
 #**Adcash iOS SDK v2.2.0**
 
 ##Release notes
-- Video Advertisements are here!
-- Statistics Improvements
+- Video advertisements
+- Statistics improvements
 - Refresh rate setting moved to publisher panel
 - Conversion tracking parameters changed
 - Bitcode support
 - Accidental clicks optimized
+- UI enhancements
 - Debug mode*
 
 > *When your application is not running on real device, you will get placeholder ads for interstitial and banner.
@@ -263,34 +264,47 @@ You can easily integrate conversion tracking into your app with the Adcash iOS S
 
 ###Adcash iOS SDK Tracking
 
-Here is how to implement the Conversion Tracking when you want to report conversion with application launch;
-   1. Import AdcashSDK.h header file on top your AppDelegate.m file:
-   
-    ```objc
-   #import<AdcashSDK.h>
-   ```
-   2. Call the reportConversionWithId: method of ADCConversionTracker in application:didFinishLaunchingWithOptions of your app delegate;
-   
-   ```objc
-   -(BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)options
-{
-//Track launching the app
-[ADCConversionTracker reportConversionWithId:<CONVERSION_TYPE> 
-                campaignID:<YOUR_CAMPAIGN_ID>
-                 parameters:nil];
+To help launch CPI campaigns, we provide the capability to send Install tracking information via a server-to-server integration so that advertiser apps do not need to be updated specifically for Adcash ads.
 
-return YES;
-}
-   ```
-   
-   >Alternatively, if you want to report conversion in a different application stage, just move the `reportConversionWithId` method there.
-   
-   _**campaignID**_ : number that represents your campaign ID.
-   
-   _**conversionType**_ : String that represents your conversion type like "Installation", "Registration", etc.
-   
-   _**otherParams**_ : Dictionary that includes parameters that you want to send with conversion. You can put nil, if you don't send extra parameters. 
-   
+Perform the following steps for integration:
+
+**Step 1:** Your app should send a request to your tracking system.
+
+**Step 2:** Your app needs to notify the Adcash tracking system by sending an
+HTTP GET request to the post-back URL.
+
+Notes on post-back URLs:
+
+You can get the post-back URL directly from the Conversion Tracking page of your user account.
+The post-back URL will depend on the tracking option you choose. Example URLs of each tracking option is below:
+
+**1. Single Campaign**
+
+ > http://imcounting.com/ad/event.php?type=Installation&campaign=123456&cid=12356&udid=549B0538-5B7D-4C93-ACDA-FE79583ED645&variable=XX
+
+**2. Multiple Campaigns**
+
+ > http://imcounting.com/ad/event.php?type=Installation&list=2253241,226453&cid=12356&udid=549B0538-5B7D-4C93-ACDA-FE79583ED645&variable= XX
+
+**3. Global Campaigns**
+
+ > http://imcounting.com/ad/event.php?type=Installation&advertiser=4444&cid=12356&udid=549B0538-5B7D-4C93-ACDA-FE79583ED645&variable=XX
+
+The values for type, campaign, list, and advertiser are auto-populated by Adcash when the S2S call is generated.
+
+The advertiser needs to populate the values for the cid, variable and udid parameters.
+
+Below is a table of the post-back URL parameters and their descriptions:  
+
+Parameter | Description 
+------------ | ------------- 
+type | Type of Event ex. Registration, Installation, Sale(auto-populated) 
+campaign | Campaign ID(auto-populated)
+cid | Click ID associated with event(input manually by advertiser)
+variable | For any extra information such as Email ID etc.(input manually by advertiser)
+list | Comma seperated Campaign ID's(auto-populated)
+advertiser | Advertiser ID(auto-populated)
+udid | Unique Identifier
    
 ##License
 [License](https://github.com/adcash/ios-sdk/blob/master/LICENSE.md)
