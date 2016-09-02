@@ -5,7 +5,6 @@
 - Video advertisements
 - Statistics improvements
 - Refresh rate setting moved to publisher panel
-- Conversion tracking parameters changed
 - Bitcode support
 - Accidental clicks optimized
 - UI enhancements
@@ -22,7 +21,6 @@ The methods for adding an advertisement types are included for;
 * Interstitial advertisements
 * Video advertisements
 
-And also if you are an advertiser, Conversion Tracking section is for you.
 
 **Prerequisites**
 * Zone ID(s) that you created at [Adcash platform](https://www.myadcash.com/)
@@ -255,57 +253,7 @@ While Adcash acknowledges the need for secure connections, our ad network is not
    It should look like this;
    ![Alt text](http://i0.wp.com/developer.adca.sh/wp-content/uploads/2015/10/app_transport_security_option2.png)
    >If you do not follow the above instructions for apps built on Xcode 7, monetisation will be severely impacted as some >connections might fail resulting in the ads not rendering.
-   
-##Conversion Tracking
-
-Conversion tracking allows advertisers to track user actions on their app(e.g. app downloads, new in-app purchases).
-
-You can easily integrate conversion tracking into your app with the Adcash iOS SDK or by manually sending a server-to-server request to a provided URL.
-
-###Server-to-server (S2S) Tracking
-
-To help launch CPI campaigns, we provide the capability to send Install tracking information via a server-to-server integration so that advertiser apps do not need to be updated specifically for Adcash ads.
-
-Perform the following steps for integration:
-
-**Step 1:** Your app should send a request to your tracking system.
-
-**Step 2:** Your app needs to notify the Adcash tracking system by sending an
-HTTP GET request to the post-back URL.
-
-Notes on post-back URLs:
-
-You can get the post-back URL directly from the Conversion Tracking page of your user account.
-The post-back URL will depend on the tracking option you choose. Example URLs of each tracking option is below:
-
-**1. Single Campaign**
-
- > http://imcounting.com/ad/event.php?type=Installation&campaign=123456&cid=12356&udid=549B0538-5B7D-4C93-ACDA-FE79583ED645&variable=XX
-
-**2. Multiple Campaigns**
-
- > http://imcounting.com/ad/event.php?type=Installation&list=2253241,226453&cid=12356&udid=549B0538-5B7D-4C93-ACDA-FE79583ED645&variable=XX
-
-**3. Global Campaigns**
-
- > http://imcounting.com/ad/event.php?type=Installation&advertiser=4444&cid=12356&udid=549B0538-5B7D-4C93-ACDA-FE79583ED645&variable=XX
-
-The values for type, campaign, list, and advertiser are auto-populated by Adcash when the S2S call is generated.
-
-The advertiser needs to populate the values for the cid, variable and udid parameters.
-
-Below is a table of the post-back URL parameters and their descriptions:  
-
-Parameter | Description 
------------- | ------------- 
-type | Type of Event ex. Registration, Installation, Sale(auto-populated) 
-campaign | Campaign ID(auto-populated)
-cid | Click ID associated with event(input manually by advertiser)
-variable | For any extra information such as Email ID etc.(input manually by advertiser)
-list | Comma seperated Campaign ID's(auto-populated)
-advertiser | Advertiser ID(auto-populated)
-udid | Unique Identifier
-   
+      
 ##License
 [License](https://github.com/adcash/ios-sdk/blob/master/LICENSE.md)
 
