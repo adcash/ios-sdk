@@ -13,15 +13,13 @@
 		413AB2F51D49E0BA0043919C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AB2F31D49E0BA0043919C /* Main.storyboard */; };
 		413AB2F71D49E0BA0043919C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413AB2F61D49E0BA0043919C /* Assets.xcassets */; };
 		413AB2FA1D49E0BA0043919C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AB2F81D49E0BA0043919C /* LaunchScreen.storyboard */; };
-		4189C04B1D75A30200C7B2B8 /* AdcashSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4189C0411D75A30200C7B2B8 /* AdcashSDK.a */; };
-		4189C04C1D75A30200C7B2B8 /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4189C0431D75A30200C7B2B8 /* closeButton.png */; };
-		4189C04D1D75A30200C7B2B8 /* FuturaFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4189C0441D75A30200C7B2B8 /* FuturaFont.ttf */; };
-		4189C04E1D75A30200C7B2B8 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 4189C0451D75A30200C7B2B8 /* info.png */; };
-		4189C04F1D75A30200C7B2B8 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4189C0461D75A30200C7B2B8 /* info@2x.png */; };
-		4189C0501D75A30200C7B2B8 /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4189C0471D75A30200C7B2B8 /* info@3x.png */; };
-		4189C0511D75A30200C7B2B8 /* skip.png in Resources */ = {isa = PBXBuildFile; fileRef = 4189C0481D75A30200C7B2B8 /* skip.png */; };
-		4189C0521D75A30200C7B2B8 /* skip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4189C0491D75A30200C7B2B8 /* skip@2x.png */; };
-		4189C0531D75A30200C7B2B8 /* skip@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4189C04A1D75A30200C7B2B8 /* skip@3x.png */; };
+		41A925051DAE680B009C3D54 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924F71DAE680B009C3D54 /* close.png */; };
+		41A925061DAE680B009C3D54 /* FuturaFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41A924F81DAE680B009C3D54 /* FuturaFont.ttf */; };
+		41A925071DAE680B009C3D54 /* Install.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924F91DAE680B009C3D54 /* Install.png */; };
+		41A925081DAE680B009C3D54 /* mute.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924FA1DAE680B009C3D54 /* mute.png */; };
+		41A925091DAE680B009C3D54 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924FB1DAE680B009C3D54 /* Play.png */; };
+		41A9250A1DAE680B009C3D54 /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924FC1DAE680B009C3D54 /* volume.png */; };
+		41A9250B1DAE680B009C3D54 /* AdcashSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A925041DAE680B009C3D54 /* AdcashSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,22 +33,19 @@
 		413AB2F61D49E0BA0043919C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413AB2F91D49E0BA0043919C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413AB2FB1D49E0BA0043919C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4189C03A1D75A30200C7B2B8 /* AdcashSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdcashSDK.h; sourceTree = "<group>"; };
-		4189C03B1D75A30200C7B2B8 /* ADCBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCBannerView.h; sourceTree = "<group>"; };
-		4189C03C1D75A30200C7B2B8 /* ADCConversionTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCConversionTracker.h; sourceTree = "<group>"; };
-		4189C03D1D75A30200C7B2B8 /* ADCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCError.h; sourceTree = "<group>"; };
-		4189C03E1D75A30200C7B2B8 /* ADCInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCInterstitial.h; sourceTree = "<group>"; };
-		4189C03F1D75A30200C7B2B8 /* ADCSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCSDK.h; sourceTree = "<group>"; };
-		4189C0401D75A30200C7B2B8 /* ADCVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCVideo.h; sourceTree = "<group>"; };
-		4189C0411D75A30200C7B2B8 /* AdcashSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdcashSDK.a; sourceTree = "<group>"; };
-		4189C0431D75A30200C7B2B8 /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
-		4189C0441D75A30200C7B2B8 /* FuturaFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaFont.ttf; sourceTree = "<group>"; };
-		4189C0451D75A30200C7B2B8 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
-		4189C0461D75A30200C7B2B8 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
-		4189C0471D75A30200C7B2B8 /* info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@3x.png"; sourceTree = "<group>"; };
-		4189C0481D75A30200C7B2B8 /* skip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip.png; sourceTree = "<group>"; };
-		4189C0491D75A30200C7B2B8 /* skip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skip@2x.png"; sourceTree = "<group>"; };
-		4189C04A1D75A30200C7B2B8 /* skip@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skip@3x.png"; sourceTree = "<group>"; };
+		41A924F71DAE680B009C3D54 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		41A924F81DAE680B009C3D54 /* FuturaFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaFont.ttf; sourceTree = "<group>"; };
+		41A924F91DAE680B009C3D54 /* Install.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Install.png; sourceTree = "<group>"; };
+		41A924FA1DAE680B009C3D54 /* mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute.png; sourceTree = "<group>"; };
+		41A924FB1DAE680B009C3D54 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		41A924FC1DAE680B009C3D54 /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume.png; sourceTree = "<group>"; };
+		41A924FE1DAE680B009C3D54 /* AdcashSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdcashSDK.h; sourceTree = "<group>"; };
+		41A924FF1DAE680B009C3D54 /* ADCBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCBannerView.h; sourceTree = "<group>"; };
+		41A925001DAE680B009C3D54 /* ADCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCError.h; sourceTree = "<group>"; };
+		41A925011DAE680B009C3D54 /* ADCInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCInterstitial.h; sourceTree = "<group>"; };
+		41A925021DAE680B009C3D54 /* ADCSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCSDK.h; sourceTree = "<group>"; };
+		41A925031DAE680B009C3D54 /* ADCVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCVideo.h; sourceTree = "<group>"; };
+		41A925041DAE680B009C3D54 /* AdcashSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdcashSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4189C04B1D75A30200C7B2B8 /* AdcashSDK.a in Frameworks */,
+				41A9250B1DAE680B009C3D54 /* AdcashSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +63,7 @@
 		413AB2DE1D49E0BA0043919C = {
 			isa = PBXGroup;
 			children = (
-				4189C0381D75A30200C7B2B8 /* AdcashSDKiOS_beta */,
+				41A924F51DAE680B009C3D54 /* AdcashSDKiOS */,
 				413AB2E91D49E0BA0043919C /* AdcashExample */,
 				413AB2E81D49E0BA0043919C /* Products */,
 			);
@@ -106,43 +101,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4189C0381D75A30200C7B2B8 /* AdcashSDKiOS_beta */ = {
+		41A924F51DAE680B009C3D54 /* AdcashSDKiOS */ = {
 			isa = PBXGroup;
 			children = (
-				4189C0391D75A30200C7B2B8 /* AdcashSDK */,
-				4189C0411D75A30200C7B2B8 /* AdcashSDK.a */,
-				4189C0421D75A30200C7B2B8 /* Images */,
+				41A924F61DAE680B009C3D54 /* AdcashResources */,
+				41A924FD1DAE680B009C3D54 /* AdcashSDK */,
+				41A925041DAE680B009C3D54 /* AdcashSDK.a */,
 			);
-			path = AdcashSDKiOS_beta;
+			path = AdcashSDKiOS;
 			sourceTree = "<group>";
 		};
-		4189C0391D75A30200C7B2B8 /* AdcashSDK */ = {
+		41A924F61DAE680B009C3D54 /* AdcashResources */ = {
 			isa = PBXGroup;
 			children = (
-				4189C03A1D75A30200C7B2B8 /* AdcashSDK.h */,
-				4189C03B1D75A30200C7B2B8 /* ADCBannerView.h */,
-				4189C03C1D75A30200C7B2B8 /* ADCConversionTracker.h */,
-				4189C03D1D75A30200C7B2B8 /* ADCError.h */,
-				4189C03E1D75A30200C7B2B8 /* ADCInterstitial.h */,
-				4189C03F1D75A30200C7B2B8 /* ADCSDK.h */,
-				4189C0401D75A30200C7B2B8 /* ADCVideo.h */,
+				41A924F71DAE680B009C3D54 /* close.png */,
+				41A924F81DAE680B009C3D54 /* FuturaFont.ttf */,
+				41A924F91DAE680B009C3D54 /* Install.png */,
+				41A924FA1DAE680B009C3D54 /* mute.png */,
+				41A924FB1DAE680B009C3D54 /* Play.png */,
+				41A924FC1DAE680B009C3D54 /* volume.png */,
+			);
+			path = AdcashResources;
+			sourceTree = "<group>";
+		};
+		41A924FD1DAE680B009C3D54 /* AdcashSDK */ = {
+			isa = PBXGroup;
+			children = (
+				41A924FE1DAE680B009C3D54 /* AdcashSDK.h */,
+				41A924FF1DAE680B009C3D54 /* ADCBannerView.h */,
+				41A925001DAE680B009C3D54 /* ADCError.h */,
+				41A925011DAE680B009C3D54 /* ADCInterstitial.h */,
+				41A925021DAE680B009C3D54 /* ADCSDK.h */,
+				41A925031DAE680B009C3D54 /* ADCVideo.h */,
 			);
 			path = AdcashSDK;
-			sourceTree = "<group>";
-		};
-		4189C0421D75A30200C7B2B8 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				4189C0431D75A30200C7B2B8 /* closeButton.png */,
-				4189C0441D75A30200C7B2B8 /* FuturaFont.ttf */,
-				4189C0451D75A30200C7B2B8 /* info.png */,
-				4189C0461D75A30200C7B2B8 /* info@2x.png */,
-				4189C0471D75A30200C7B2B8 /* info@3x.png */,
-				4189C0481D75A30200C7B2B8 /* skip.png */,
-				4189C0491D75A30200C7B2B8 /* skip@2x.png */,
-				4189C04A1D75A30200C7B2B8 /* skip@3x.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,17 +194,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4189C04D1D75A30200C7B2B8 /* FuturaFont.ttf in Resources */,
-				4189C04C1D75A30200C7B2B8 /* closeButton.png in Resources */,
-				4189C0511D75A30200C7B2B8 /* skip.png in Resources */,
-				4189C0521D75A30200C7B2B8 /* skip@2x.png in Resources */,
+				41A925061DAE680B009C3D54 /* FuturaFont.ttf in Resources */,
+				41A925091DAE680B009C3D54 /* Play.png in Resources */,
+				41A925081DAE680B009C3D54 /* mute.png in Resources */,
 				413AB2FA1D49E0BA0043919C /* LaunchScreen.storyboard in Resources */,
-				4189C0531D75A30200C7B2B8 /* skip@3x.png in Resources */,
+				41A9250A1DAE680B009C3D54 /* volume.png in Resources */,
 				413AB2F71D49E0BA0043919C /* Assets.xcassets in Resources */,
+				41A925051DAE680B009C3D54 /* close.png in Resources */,
 				413AB2F51D49E0BA0043919C /* Main.storyboard in Resources */,
-				4189C0501D75A30200C7B2B8 /* info@3x.png in Resources */,
-				4189C04F1D75A30200C7B2B8 /* info@2x.png in Resources */,
-				4189C04E1D75A30200C7B2B8 /* info.png in Resources */,
+				41A925071DAE680B009C3D54 /* Install.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +340,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdcashSDKiOS_beta",
+					"$(PROJECT_DIR)/AdcashSDKiOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = adcash.AdcashExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,6 +358,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdcashSDKiOS_beta",
+					"$(PROJECT_DIR)/AdcashSDKiOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = adcash.AdcashExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

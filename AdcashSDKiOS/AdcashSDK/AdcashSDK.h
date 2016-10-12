@@ -8,7 +8,6 @@
 
 #import "ADCInterstitial.h"
 #import "ADCBannerView.h"
-#import "ADCConversionTracker.h"
 #import "ADCError.h"
 #import "ADCSDK.h"
 #import "ADCVideo.h"

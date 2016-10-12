@@ -43,7 +43,7 @@
  Use error param to determine what is the cause. Usually this is because there is no
  internet connectivity or because there are no more interstitial ads to show.
  
- @param interstitial The ADCInterstitial instance that failed to load.
+ @param interstitial An ADCInterstitial instance that failed to load.
  @param error        A NSError instance. Use it to determine why the loading has failed.
  
  @since 2.0.0
@@ -70,7 +70,7 @@
 
 
 /**
- @brief  Sent when the app is about the enter in background because the user
+ @brief  Sent when the app is about to enter in background because the user
  has clicked on an ad that navigates outside of the app to another application (e.g. App Store).
  Method `applicationDidEnterBackground:` of your app delegate is called immediately after this.
  @note The method is called before calling `[[UIApplication sharedApplication] openURL:]`.

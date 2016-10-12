@@ -1,5 +1,5 @@
 
-#**Adcash iOS SDK v2.2.0**
+#**Adcash iOS SDK v2.2.1**
 
 ##Release notes
 - Video advertisements
@@ -26,7 +26,7 @@ The methods for adding an advertisement types are included for;
 * Zone ID(s) that you created at [Adcash platform](https://www.myadcash.com/)
 * [Adcash iOS SDK](https://github.com/adcash/ios-sdk/raw/master/AdcashSDKiOS.zip)
 * Xcode 5 or higher
-* Project deployment target iOS 6.0 or higher
+* Project deployment target iOS 7.0 or higher
 
 **Integration with CocoaPods :**
 

@@ -59,7 +59,7 @@
     
     
     //Video--------------------------------------------------------------------------------------------------------
-    _video = [[ADCVideo alloc] initVideoWithZoneID:@"1352521"];
+    _video = [[ADCVideo alloc] initVideoWithZoneID:@"1396575"];
     _video.delegate = self;
     
     //-------------------------------------------------------------------------------------------------------------
@@ -192,7 +192,9 @@
 
 -(void)videoButton
 {
-    [_video playVideoFromViewController:self];
+
+    _video = [[ADCVideo alloc] initVideoWithZoneID:@"1396575"];
+    _video.delegate = self;
 }
 
 #pragma mark Delegate Examples
@@ -200,6 +202,12 @@
 -(void)videoDidReceiveAd:(ADCVideo *)video
 {
     NSLog(@"Video received an ad and ready to play.");
+        [_video playVideoFromViewController:self];
+}
+
+-(void)videoDidDismissScreen:(ADCVideo *)video
+{
+    _video = nil;
 }
 
 
