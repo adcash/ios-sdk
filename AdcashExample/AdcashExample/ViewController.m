@@ -8,11 +8,11 @@
 #import "ViewController.h"
 #import "AdcashSDK.h"
 
-@interface ViewController () <ADCBannerViewDelegate,ADCInterstitialDelegate,ADCVideoDelegate>
+@interface ViewController () <ADCBannerViewDelegate,ADCInterstitialDelegate,AdcashRewardedVideoDelegate>
 
 @property (nonatomic, strong) ADCBannerView *banner;
 @property (nonatomic, strong) ADCInterstitial *interstitial;
-@property (nonatomic, strong) ADCVideo *video;
+@property (nonatomic, strong) AdcashRewardedVideo *video;
 @property (nonatomic, strong) IBOutlet UIButton *showBanner;
 @property (nonatomic, strong) IBOutlet UIButton *showInterstitial;
 @property (nonatomic, strong) IBOutlet UIButton *showVideo;
@@ -25,9 +25,7 @@
     [super viewDidLoad];
     
     //Banner-------------------------------------------------------------------------------------------------------
-    _banner = [[ADCBannerView alloc] initWithAdSize:ADCAdSizeSmartBanner
-                                                 zoneID:@"1253040"
-                                     rootViewController:self];
+    _banner = [[ADCBannerView alloc] initWithZoneID:@"1461197" onViewController:self];
     
     _banner.translatesAutoresizingMaskIntoConstraints = NO;
     
@@ -48,21 +46,6 @@
     _banner.delegate = self;
     //-------------------------------------------------------------------------------------------------------------
     
-    
-    //Interstitial-------------------------------------------------------------------------------------------------
-    _interstitial = [[ADCInterstitial alloc] initWithZoneID:@"1253058"];
-    
-    _interstitial.delegate = self;
-    
-    [_interstitial load];
-    //-------------------------------------------------------------------------------------------------------------
-    
-    
-    //Video--------------------------------------------------------------------------------------------------------
-    _video = [[ADCVideo alloc] initVideoWithZoneID:@"1396575"];
-    _video.delegate = self;
-    
-    //-------------------------------------------------------------------------------------------------------------
     
     
     //User Interface-----------------------------------------------------------------------------------------------
@@ -100,7 +83,7 @@
     
     _showVideo.frame = CGRectMake(0, 0, 50, 100);
     
-    [_showVideo setTitle:@" Show Video " forState:UIControlStateNormal];
+    [_showVideo setTitle:@" Show Rewarded " forState:UIControlStateNormal];
     
     [[_showVideo layer] setBorderWidth:2.0f];
     
@@ -187,33 +170,34 @@
 
 -(void)interstitialButton
 {
-    [_interstitial presentFromRootViewController:self];
+    _interstitial = [[ADCInterstitial alloc] initWithZoneID:@"1253058"];
+    _interstitial.delegate = self;
+    [_interstitial load];
 }
 
 -(void)videoButton
 {
-
-    _video = [[ADCVideo alloc] initVideoWithZoneID:@"1396575"];
+    _video = [[AdcashRewardedVideo alloc] initRewardedVideoWithZoneID:@"1461193"];
     _video.delegate = self;
 }
 
 #pragma mark Delegate Examples
 
--(void)videoDidReceiveAd:(ADCVideo *)video
+-(void)rewardedVideoDidReceiveAd:(AdcashRewardedVideo *)rewardedVideo
 {
-    NSLog(@"Video received an ad and ready to play.");
-        [_video playVideoFromViewController:self];
+    NSLog(@"Rewarded video received and ready to be shown.");
+    [_video playRewardedVideoFrom:self];
 }
 
--(void)videoDidDismissScreen:(ADCVideo *)video
+-(void)rewardedVideoDidComplete:(AdcashRewardedVideo *)rewardedVideo withReward:(double)reward
 {
-    _video = nil;
+    NSLog(@"Rewarded video complete. User earned %.f reward",reward);
 }
-
 
 -(void)interstitialDidReceiveAd:(ADCInterstitial *)interstitial
 {
     NSLog(@"Interstitial received an ad and ready to be shown.");
+    [_interstitial presentFromRootViewController:self];
 }
 
 @end

@@ -13,13 +13,15 @@
 		413AB2F51D49E0BA0043919C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AB2F31D49E0BA0043919C /* Main.storyboard */; };
 		413AB2F71D49E0BA0043919C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413AB2F61D49E0BA0043919C /* Assets.xcassets */; };
 		413AB2FA1D49E0BA0043919C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AB2F81D49E0BA0043919C /* LaunchScreen.storyboard */; };
-		41A925051DAE680B009C3D54 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924F71DAE680B009C3D54 /* close.png */; };
-		41A925061DAE680B009C3D54 /* FuturaFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41A924F81DAE680B009C3D54 /* FuturaFont.ttf */; };
-		41A925071DAE680B009C3D54 /* Install.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924F91DAE680B009C3D54 /* Install.png */; };
-		41A925081DAE680B009C3D54 /* mute.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924FA1DAE680B009C3D54 /* mute.png */; };
-		41A925091DAE680B009C3D54 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924FB1DAE680B009C3D54 /* Play.png */; };
-		41A9250A1DAE680B009C3D54 /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A924FC1DAE680B009C3D54 /* volume.png */; };
-		41A9250B1DAE680B009C3D54 /* AdcashSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A925041DAE680B009C3D54 /* AdcashSDK.a */; };
+		41C78BC41DFE957B0023A7E2 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C78BBB1DFE957B0023A7E2 /* close.png */; };
+		41C78BC51DFE957B0023A7E2 /* FuturaFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C78BBC1DFE957B0023A7E2 /* FuturaFont.ttf */; };
+		41C78BC61DFE957B0023A7E2 /* Install.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C78BBD1DFE957B0023A7E2 /* Install.png */; };
+		41C78BC71DFE957B0023A7E2 /* mute.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C78BBE1DFE957B0023A7E2 /* mute.png */; };
+		41C78BC81DFE957B0023A7E2 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C78BBF1DFE957B0023A7E2 /* OpenSans-Regular.ttf */; };
+		41C78BC91DFE957B0023A7E2 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C78BC01DFE957B0023A7E2 /* OpenSans-Semibold.ttf */; };
+		41C78BCA1DFE957B0023A7E2 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C78BC11DFE957B0023A7E2 /* Play.png */; };
+		41C78BCB1DFE957B0023A7E2 /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C78BC21DFE957B0023A7E2 /* volume.png */; };
+		41C78BD91DFED17C0023A7E2 /* Adcash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C78BD81DFED17C0023A7E2 /* Adcash.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,19 +35,21 @@
 		413AB2F61D49E0BA0043919C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413AB2F91D49E0BA0043919C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413AB2FB1D49E0BA0043919C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41A924F71DAE680B009C3D54 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
-		41A924F81DAE680B009C3D54 /* FuturaFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaFont.ttf; sourceTree = "<group>"; };
-		41A924F91DAE680B009C3D54 /* Install.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Install.png; sourceTree = "<group>"; };
-		41A924FA1DAE680B009C3D54 /* mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute.png; sourceTree = "<group>"; };
-		41A924FB1DAE680B009C3D54 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
-		41A924FC1DAE680B009C3D54 /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume.png; sourceTree = "<group>"; };
-		41A924FE1DAE680B009C3D54 /* AdcashSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdcashSDK.h; sourceTree = "<group>"; };
-		41A924FF1DAE680B009C3D54 /* ADCBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCBannerView.h; sourceTree = "<group>"; };
-		41A925001DAE680B009C3D54 /* ADCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCError.h; sourceTree = "<group>"; };
-		41A925011DAE680B009C3D54 /* ADCInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCInterstitial.h; sourceTree = "<group>"; };
-		41A925021DAE680B009C3D54 /* ADCSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCSDK.h; sourceTree = "<group>"; };
-		41A925031DAE680B009C3D54 /* ADCVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCVideo.h; sourceTree = "<group>"; };
-		41A925041DAE680B009C3D54 /* AdcashSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdcashSDK.a; sourceTree = "<group>"; };
+		41C78BB41DFE957B0023A7E2 /* AdcashRewardedVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdcashRewardedVideo.h; sourceTree = "<group>"; };
+		41C78BB51DFE957B0023A7E2 /* AdcashSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdcashSDK.h; sourceTree = "<group>"; };
+		41C78BB61DFE957B0023A7E2 /* ADCBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCBannerView.h; sourceTree = "<group>"; };
+		41C78BB71DFE957B0023A7E2 /* ADCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCError.h; sourceTree = "<group>"; };
+		41C78BB81DFE957B0023A7E2 /* ADCInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCInterstitial.h; sourceTree = "<group>"; };
+		41C78BB91DFE957B0023A7E2 /* ADCSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCSDK.h; sourceTree = "<group>"; };
+		41C78BBB1DFE957B0023A7E2 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		41C78BBC1DFE957B0023A7E2 /* FuturaFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaFont.ttf; sourceTree = "<group>"; };
+		41C78BBD1DFE957B0023A7E2 /* Install.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Install.png; sourceTree = "<group>"; };
+		41C78BBE1DFE957B0023A7E2 /* mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute.png; sourceTree = "<group>"; };
+		41C78BBF1DFE957B0023A7E2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		41C78BC01DFE957B0023A7E2 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		41C78BC11DFE957B0023A7E2 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		41C78BC21DFE957B0023A7E2 /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume.png; sourceTree = "<group>"; };
+		41C78BD81DFED17C0023A7E2 /* Adcash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Adcash.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A9250B1DAE680B009C3D54 /* AdcashSDK.a in Frameworks */,
+				41C78BD91DFED17C0023A7E2 /* Adcash.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,37 +108,39 @@
 		41A924F51DAE680B009C3D54 /* AdcashSDKiOS */ = {
 			isa = PBXGroup;
 			children = (
-				41A924F61DAE680B009C3D54 /* AdcashResources */,
-				41A924FD1DAE680B009C3D54 /* AdcashSDK */,
-				41A925041DAE680B009C3D54 /* AdcashSDK.a */,
+				41C78BD81DFED17C0023A7E2 /* Adcash.a */,
+				41C78BB31DFE957B0023A7E2 /* Headers */,
+				41C78BBA1DFE957B0023A7E2 /* Resources */,
 			);
 			path = AdcashSDKiOS;
 			sourceTree = "<group>";
 		};
-		41A924F61DAE680B009C3D54 /* AdcashResources */ = {
+		41C78BB31DFE957B0023A7E2 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				41A924F71DAE680B009C3D54 /* close.png */,
-				41A924F81DAE680B009C3D54 /* FuturaFont.ttf */,
-				41A924F91DAE680B009C3D54 /* Install.png */,
-				41A924FA1DAE680B009C3D54 /* mute.png */,
-				41A924FB1DAE680B009C3D54 /* Play.png */,
-				41A924FC1DAE680B009C3D54 /* volume.png */,
+				41C78BB41DFE957B0023A7E2 /* AdcashRewardedVideo.h */,
+				41C78BB51DFE957B0023A7E2 /* AdcashSDK.h */,
+				41C78BB61DFE957B0023A7E2 /* ADCBannerView.h */,
+				41C78BB71DFE957B0023A7E2 /* ADCError.h */,
+				41C78BB81DFE957B0023A7E2 /* ADCInterstitial.h */,
+				41C78BB91DFE957B0023A7E2 /* ADCSDK.h */,
 			);
-			path = AdcashResources;
+			path = Headers;
 			sourceTree = "<group>";
 		};
-		41A924FD1DAE680B009C3D54 /* AdcashSDK */ = {
+		41C78BBA1DFE957B0023A7E2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				41A924FE1DAE680B009C3D54 /* AdcashSDK.h */,
-				41A924FF1DAE680B009C3D54 /* ADCBannerView.h */,
-				41A925001DAE680B009C3D54 /* ADCError.h */,
-				41A925011DAE680B009C3D54 /* ADCInterstitial.h */,
-				41A925021DAE680B009C3D54 /* ADCSDK.h */,
-				41A925031DAE680B009C3D54 /* ADCVideo.h */,
+				41C78BBB1DFE957B0023A7E2 /* close.png */,
+				41C78BBC1DFE957B0023A7E2 /* FuturaFont.ttf */,
+				41C78BBD1DFE957B0023A7E2 /* Install.png */,
+				41C78BBE1DFE957B0023A7E2 /* mute.png */,
+				41C78BBF1DFE957B0023A7E2 /* OpenSans-Regular.ttf */,
+				41C78BC01DFE957B0023A7E2 /* OpenSans-Semibold.ttf */,
+				41C78BC11DFE957B0023A7E2 /* Play.png */,
+				41C78BC21DFE957B0023A7E2 /* volume.png */,
 			);
-			path = AdcashSDK;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,15 +200,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A925061DAE680B009C3D54 /* FuturaFont.ttf in Resources */,
-				41A925091DAE680B009C3D54 /* Play.png in Resources */,
-				41A925081DAE680B009C3D54 /* mute.png in Resources */,
+				41C78BC51DFE957B0023A7E2 /* FuturaFont.ttf in Resources */,
+				41C78BC71DFE957B0023A7E2 /* mute.png in Resources */,
 				413AB2FA1D49E0BA0043919C /* LaunchScreen.storyboard in Resources */,
-				41A9250A1DAE680B009C3D54 /* volume.png in Resources */,
+				41C78BC91DFE957B0023A7E2 /* OpenSans-Semibold.ttf in Resources */,
 				413AB2F71D49E0BA0043919C /* Assets.xcassets in Resources */,
-				41A925051DAE680B009C3D54 /* close.png in Resources */,
+				41C78BC41DFE957B0023A7E2 /* close.png in Resources */,
+				41C78BCB1DFE957B0023A7E2 /* volume.png in Resources */,
 				413AB2F51D49E0BA0043919C /* Main.storyboard in Resources */,
-				41A925071DAE680B009C3D54 /* Install.png in Resources */,
+				41C78BCA1DFE957B0023A7E2 /* Play.png in Resources */,
+				41C78BC81DFE957B0023A7E2 /* OpenSans-Regular.ttf in Resources */,
+				41C78BC61DFE957B0023A7E2 /* Install.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
