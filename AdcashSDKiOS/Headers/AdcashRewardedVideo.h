@@ -30,7 +30,7 @@
  
  @since 2.3.0
  */
-- (void)rewardedVideoDidComplete:(AdcashRewardedVideo *)rewardedVideo withReward:(double)reward;
+- (void)rewardedVideoDidComplete:(AdcashRewardedVideo *)rewardedVideo withReward:(int)reward;
 
 @optional
 
@@ -111,7 +111,7 @@
  content and become ready to present, and when the time comes, it can be immediately presented to the user
  with a smooth experience.
  */
-@interface AdcashRewardedVideo : UIViewController
+@interface AdcashRewardedVideo : NSObject
 
 /**
  An object that comforms to the AdcashRewardedVideoDelegate and can receive callbacks for rewarded video

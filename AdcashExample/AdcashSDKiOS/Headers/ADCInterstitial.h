@@ -115,6 +115,12 @@
 @property (nonatomic, readonly, assign) BOOL isReady;
 
 /**
+ Indicates whether the dynamic interstitial(video) is ready to be presented.
+ @since 2.2.2
+ */
+@property (nonatomic, readonly, assign) BOOL isVideoReady;
+
+/**
  An object that conforms to the ADCInterstitialDelegate and can receive callbacks
  for interstitial state change. May be nil.
  @since 2.0.0
