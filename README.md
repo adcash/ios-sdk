@@ -1,5 +1,5 @@
 
-# **Adcash iOS SDK v2.2.2**
+# **Adcash iOS SDK v2.3**
 
 
 ## **Prerequisites**
@@ -29,12 +29,12 @@
 
    Here is how you can integrate a banner into your app just in few steps :
    1. Import `AdcashSDK.h` header file in your view controller's file;
-   
+
    ```objc
    #import<AdcashSDK.h>
    ```
    2. Set your view controller to conform to `ADCBannerViewDelegate` protocol;
-   
+
    ```objc
       @interface ViewController () <ADCBannerViewDelegate>
       ...
@@ -57,16 +57,16 @@
    	NSDictionary *views = NSDictionaryOfVariableBindings(bannerView);
 
    	//Set banner to take the width of it’s parent view
-   	[self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@“H: | [bannerView] | ” 
-   	                                                                 options:0 
-   	                                                                 metrics:nil 
+   	[self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@“H: | [bannerView] | ”
+   	                                                                 options:0
+   	                                                                 metrics:nil
    	                                                                 views:views]];
 
 
    //Set banner to stick to the bottom of it’s parent
-   [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@“V: [bannerView] | ” 
-                                                                     options:0 
-                                                                     metrics:nil 
+   [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@“V: [bannerView] | ”
+                                                                     options:0
+                                                                     metrics:nil
                                                                      views:views]];
 
    //Set the banner’s delegate to be your view controller
@@ -75,7 +75,7 @@
    //Show the banner
    [bannerView load];
    ```
-   
+
    4. _**(Optional)**_ You can catch status updates from your banner by implementing the optional methods in `ADCBannerViewDelegate` protocol:
      ```objc
       -(void) bannerViewDidReceiveAd: (ADCBannerView *)bannerView;
@@ -84,7 +84,7 @@
       -(void) bannerViewWillLeaveApplication:(ADCBannerView *) bannerView;
       -(void) bannerViewWillDismissScreen: (ADCBannerView *) bannerView;
       ```
-      
+
 
 ---
 
@@ -92,12 +92,12 @@
 
    Here is how you can integrate an interstitial into your app just in few steps :
    1. Import `AdcashSDK.h` header file in your view controller's file;
-   
+
    ```objc
    #import<AdcashSDK.h>
    ```
    2. Declare an interstitial property in your file and make your view controller conform to the `ADCInterstitialDelegate` protocol. Your interface should look like this;
-   
+
    ```objc
    @interface ViewController : UIViewController <ADCInterstitialDelegate>
 @property (nonatomic,strong) ADCInterstitial *interstitial;
@@ -120,10 +120,10 @@ self.interstitial.delegate = self;
    -(void) interstitialDidReceiveAd:(ADCInterstitial *)interstitial
 {
 [interstitial presentFromRootViewController:self];
-} 
+}
    ```
    5. _**(Optional)**_ You can catch other status updates of your interstitial by implementing the optional methods in `ADCInterstitialDelegate` protocol;
-   
+
    ```objc
       -(void) interstitialDidReceiveAd: (ADCInterstitial *)interstitial;
       -(void) interstitial: (ADCInterstitial *)interstitial didFailToReceiveAdWithError:(NSError *)error;
@@ -137,19 +137,19 @@ self.interstitial.delegate = self;
 
    Here is how you can integrate a rewarded video into your app just in few steps :
    1. Import `AdcashSDK.h` header file into your view controllers file;
-   
+
    ```objc
    #import<AdcashSDK.h>
    ```
    2. Declare a rewarded video property in your header file and make your view controller conform to the `AdcashRewardedVideoDelegate` protocol. Your interface should look like this;
-   
+
    ```objc
-   @interface ViewController : UIViewController
+   @interface ViewController : UIViewController<AdcashRewardedVideoDelegate>
    @property (nonatomic,strong) AdcashRewardedVideo *video;
    @end
    ```
    3. To load the rewarded video, add the following code to `viewDidLoad:` method;
-   
+
    ```objc
    //Assign AdcashRewardedVideo instance to your property.
    self.video = [[AdcashRewardedVideo alloc] initRewardedVideoWithZoneID:@“<YOUR_ZONE_ID>”];
@@ -169,8 +169,8 @@ self.interstitial.delegate = self;
         [self.video playRewardedVideoFrom:self];
     }
     ```
-    
-    
+
+
    5. To use ad events:
 
     _**(Required)**_
@@ -198,7 +198,68 @@ self.interstitial.delegate = self;
    -(void) RewardedVideoDidDismissScreen:(AdcashRewardedVideo *)video;
    -(void) RewardedVideoWillLeaveApplication:(AdcashRewardedVideo *)video;
    ```
-   
+
+---
+##Native Advertisements
+
+Native is an ad format that is rendered by the publisher, allowing them to give users a unique experience with finely tuned look and design.
+
+Here is how you can integrate a native ad into your app just in few steps :
+  1. Import `AdcashSDK.h` header file into your view controllers file;
+
+  ```objc
+  #import<AdcashSDK.h>
+  ```
+  2. Declare a native ad property in your header file and make your view controller conform to the `AdcashNativeDelegate` protocol. Your interface should look like this;
+
+  ```objc
+  @interface ViewController : UIViewController<AdcashNativeDelegate>
+  @property (nonatomic,strong) AdcashNative *native;
+  @end
+  ```
+  3. To load the native ad, call;
+
+  ```objc
+
+  self.native = [[AdcashNative alloc] initAdcashNativeWithZoneID:@“<YOUR_ZONE_ID>”];
+  self.native.delegate = self;
+  ```
+
+  4. After loading, if response is successful, native instance is filled with information about the ad, that contains:
+
+    >Title
+
+    >Description
+
+    >Rating
+
+    >Icon
+
+    >Image
+
+    >Action button text
+
+  to get these values, you should use the provided functions below:   
+
+   ```objc
+   -(NSString *)getAdTitle;
+   -(NSString *)getAdDescription;
+   -(NSString *)getAdRating;
+   -(NSURL *)getAdIcon;
+   -(NSURL *)getAdImage;
+   -(NSString *)getAdButtonText;
+   ```
+
+
+  5. To use ad events:
+
+   ```objc
+   -(void)AdcashNativeAdReceived:(AdcashNative *)native;
+   -(void)AdcashNativeFailedToReceiveAd:(AdcashNative *)native withError:(NSError *)error;
+   ```
+
+
+
 ##App Transport Security
 
 With the release of iOS 9, Apple introduced a new default setting, called App Transport Security(ATS). ATS requires apps to make network connection only over SSL. It also allows specific encryption ciphers,SSL version and key length to be used when creating HTTPS connections.
@@ -209,26 +270,26 @@ Therefore, all iOS 9 devices running apps built with Xcode 7 that doesn’t disa
 While Adcash acknowledges the need for secure connections, our ad network is not ready yet with the compliance of the requirements. Therefore, Adcash iOS SDK will work only by disabling App Transport Security in your Info.plist. You can do so by using one of the following two ways depending on your preference:
 
    1.**Disable ATS for all domains**
-   
+
    This is the easiest solution. Right click on your **Info.plist** and select **Open As > Source Code**, then paste the snippet below at the end of the code.
-      
-      
+
+
       <key>NSAppTransportSecurity</key>
       <dict>
         <key>NSAllowsArbitraryLoads</key>
         <true/>
       </dict>
-      
+
    It should look like this;
    ![Alt text](http://i1.wp.com/developer.adca.sh/wp-content/uploads/2015/10/app_transport_security_option1.png)
-      
+
    2.**Disable ATS for all domains, with some exceptions**
-   
+
    You may only want ATS to work on domains you specifically know can support it. For example, if you knew that your server supports ATS and you would want things like login calls, and other requests to your server to use ATS, but ad requests to Adcash to bypass ATS requirements.
-   
+
    In this case you should set **NSAllowsArbitraryLoads** to true, then define the URLs that you want to be secure in your NSExceptionDomains dictionary. Each domain you wish to be secure should have its own dictionary, and the NSExceptionAllowsInsecureHTTPLoads for that dictionary should be set to false.
-   
-      
+
+
       <key>NSAppTransportSecurity</key>
       <dict>
          <key>NSAllowsArbitraryLoads</key>
@@ -242,12 +303,12 @@ While Adcash acknowledges the need for secure connections, our ad network is not
             </dict>
          </dict>
       </dict>
-      
+
 
    It should look like this;
    ![Alt text](http://i0.wp.com/developer.adca.sh/wp-content/uploads/2015/10/app_transport_security_option2.png)
    >If you do not follow the above instructions for apps built on Xcode 7, monetisation will be severely impacted as some connections might fail resulting in the ads not rendering.
-      
+
 ##License
 [License](https://github.com/adcash/ios-sdk/blob/master/LICENSE.md)
 
