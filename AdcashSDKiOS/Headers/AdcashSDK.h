@@ -11,3 +11,4 @@
 #import "ADCError.h"
 #import "ADCSDK.h"
 #import "AdcashRewardedVideo.h"
+#import "AdcashNative.h"
