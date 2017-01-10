@@ -258,6 +258,20 @@ Here is how you can integrate a native ad into your app just in few steps :
    -(void)AdcashNativeFailedToReceiveAd:(AdcashNative *)native withError:(NSError *)error;
    ```
 
+  6. **You should also handle clicks and impressions so monetization won't get affected.**
+
+  Call the function below, when ad is visible on the screen ;
+
+  ```objc
+  -(void)trackImpression;
+  ```
+
+  To handle clicks call;
+
+  ```objc
+  -(void)openClick;
+  ```
+For detailed implementation and examples, check our [**Example Project**](https://github.com/adcash/ios-sdk/tree/master/AdcashNativeExample).
 
 
 ##App Transport Security
