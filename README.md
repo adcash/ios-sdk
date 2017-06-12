@@ -1,5 +1,5 @@
 
-# **Adcash iOS SDK v2.3**
+# **Adcash iOS SDK v2.4**
 
 
 ## **Prerequisites**

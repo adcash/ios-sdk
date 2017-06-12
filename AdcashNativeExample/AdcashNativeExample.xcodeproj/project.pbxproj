@@ -15,7 +15,6 @@
 		41AC627E1E28CC6B00ECD45E /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41AC62751E28CC6B00ECD45E /* OpenSans-Semibold.ttf */; };
 		41AC627F1E28CC6B00ECD45E /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 41AC62761E28CC6B00ECD45E /* Play.png */; };
 		41AC62801E28CC6B00ECD45E /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 41AC62771E28CC6B00ECD45E /* volume.png */; };
-		41AC62811E28CC6B00ECD45E /* Adcash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AC62781E28CC6B00ECD45E /* Adcash.a */; };
 		41D416EA1E1F8449007FF754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D416E91E1F8449007FF754 /* main.m */; };
 		41D416ED1E1F8449007FF754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D416EC1E1F8449007FF754 /* AppDelegate.m */; };
 		41D416F31E1F8449007FF754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D416F11E1F8449007FF754 /* Main.storyboard */; };
@@ -37,6 +36,7 @@
 		41D4174E1E23D1B7007FF754 /* AdcashBannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D4174D1E23D1B7007FF754 /* AdcashBannerVC.m */; };
 		41D417521E23D9D0007FF754 /* AdcashInterstitialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D417511E23D9D0007FF754 /* AdcashInterstitialVC.m */; };
 		41D417571E23DFC9007FF754 /* AdcashRewardedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D417561E23DFC9007FF754 /* AdcashRewardedVC.m */; };
+		CEF540C11EEEC2A000B79392 /* Adcash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF540C01EEEC2A000B79392 /* Adcash.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +55,6 @@
 		41AC62751E28CC6B00ECD45E /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		41AC62761E28CC6B00ECD45E /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
 		41AC62771E28CC6B00ECD45E /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume.png; sourceTree = "<group>"; };
-		41AC62781E28CC6B00ECD45E /* Adcash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Adcash.a; path = AdcashSDKiOS/Adcash.a; sourceTree = "<group>"; };
 		41D416E51E1F8449007FF754 /* AdcashNativeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdcashNativeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D416E91E1F8449007FF754 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41D416EB1E1F8449007FF754 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		41D417511E23D9D0007FF754 /* AdcashInterstitialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdcashInterstitialVC.m; sourceTree = "<group>"; };
 		41D417551E23DFC9007FF754 /* AdcashRewardedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdcashRewardedVC.h; sourceTree = "<group>"; };
 		41D417561E23DFC9007FF754 /* AdcashRewardedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdcashRewardedVC.m; sourceTree = "<group>"; };
+		CEF540C01EEEC2A000B79392 /* Adcash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Adcash.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41AC62811E28CC6B00ECD45E /* Adcash.a in Frameworks */,
+				CEF540C11EEEC2A000B79392 /* Adcash.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,9 +187,9 @@
 		41D417021E1F8F2A007FF754 /* AdcashSDK */ = {
 			isa = PBXGroup;
 			children = (
+				CEF540C01EEEC2A000B79392 /* Adcash.a */,
 				41AC62671E28CC6B00ECD45E /* Headers */,
 				41AC626F1E28CC6B00ECD45E /* Resources */,
-				41AC62781E28CC6B00ECD45E /* Adcash.a */,
 				41D417261E1F9043007FF754 /* HCSStarRating */,
 			);
 			name = AdcashSDK;
