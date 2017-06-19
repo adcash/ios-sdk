@@ -26,11 +26,12 @@
  watching the rewarded video.
  
  @param rewardedVideo An AdcashRewardedVideo instance that has successfully completed playing.
- @param reward An integer that represents the amount of in-game goods that user should rewarded with.
+ @param rewardName An integer that represents the amount of in-game goods that user should rewarded with.
+ @param amount A string that represents the name of in-game goods that user should rewarded with.
  
  @since 2.3.0
  */
-- (void)rewardedVideoDidComplete:(AdcashRewardedVideo *)rewardedVideo withReward:(int)reward;
+- (void)rewardedVideoDidComplete:(AdcashRewardedVideo *)rewardedVideo withRewardName:(NSString *)rewardName andAmount:(int)amount;
 
 @optional
 
