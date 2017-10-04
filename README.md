@@ -77,14 +77,14 @@
    ```
 
    4. _**(Optional)**_ You can catch status updates from your banner by implementing the optional methods in `ADCBannerViewDelegate` protocol:
-     ```objc
-      -(void) bannerViewDidReceiveAd: (ADCBannerView *)bannerView;
-      -(void) bannerView: (ADCBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error;
-      -(void) bannerViewWillPresentScreen: (ADCBannerView *) bannerView;
-      -(void) bannerViewWillLeaveApplication:(ADCBannerView *) bannerView;
-      -(void) bannerViewWillDismissScreen: (ADCBannerView *) bannerView;
-      ```
 
+```objc
+    -(void) bannerViewDidReceiveAd: (ADCBannerView *)bannerView;
+    -(void) bannerView: (ADCBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error;
+    -(void) bannerViewWillPresentScreen: (ADCBannerView *) bannerView;
+    -(void) bannerViewWillLeaveApplication:(ADCBannerView *) bannerView;
+    -(void) bannerViewWillDismissScreen: (ADCBannerView *) bannerView;
+```
 
 ---
 
@@ -130,7 +130,7 @@ self.interstitial.delegate = self;
       -(void) interstitialWillPresentScreen: (ADCInterstitial *)interstitial;
       -(void) interstitialWillDismissScreen: (ADCInterstitial *)interstitial;
       -(void) interstitialWillLeaveApplication: (ACInterstitial *)interstitial;
-      ```
+   ```
 
 ---
 
@@ -142,6 +142,7 @@ self.interstitial.delegate = self;
    ```objc
    #import<AdcashSDK.h>
    ```
+
    2. Declare a rewarded video property in your header file and make your view controller conform to the `AdcashRewardedVideoDelegate` protocol. Your interface should look like this;
 
    ```objc
@@ -149,6 +150,7 @@ self.interstitial.delegate = self;
    @property (nonatomic,strong) AdcashRewardedVideo *video;
    @end
    ```
+
    3. To load the rewarded video, add the following code to `viewDidLoad:` method;
 
    ```objc
@@ -164,43 +166,47 @@ self.interstitial.delegate = self;
 
    > Example below
 
-    ```objc
+
+```objc
     -(void)rewardedVideoDidReceiveAd:(AdcashRewardedVideo *)rewardedVideo
     {
         [self.video playRewardedVideoFrom:self];
     }
-    ```
+```
 
 
    5. To use ad events:
 
-    _**(Required)**_
+_**(Required)**_
 
-    ```objc
+
+```objc
     -(void)rewardedVideoDidComplete:(AdcashRewardedVideo *)rewardedVideo withReward:(int)reward;
-    ```
+```
+
     > This method is called when user completed watching rewarded video and it's time to reward the user.
     Example below
 
-    ```objc
+
+```objc
     -(void)rewardedVideoDidComplete:(AdcashRewardedVideo *)rewardedVideo withReward:(int)reward
     {
         user.coins += reward;
         //or you can disregard "reward" value and use your own, if you have other algorithms
         //to reward the user.
     }
-    ```
+```
 
-    _**(Optional)**_ You can catch status updates from your video by implementing the optional methods in  `AdcashRewardedVideoDelegate` protocol:
+_**(Optional)**_ You can catch status updates from your video by implementing the optional methods in  `AdcashRewardedVideoDelegate` protocol:
 
-   ```objc
+```objc
    -(void) RewardedVideoDidReceiveAd: (AdcashRewardedVideo *)video;
    -(void) RewardedVideoDidFailToReceiveAd:(AdcashRewardedVideo *)video withError:(NSError *)error;
    -(void) RewardedVideoWillPresentScreen:(AdcashRewardedVideo *)video;
    -(void) RewardedVideoWillDismissScreen:(AdcashRewardedVideo *)video;
    -(void) RewardedVideoDidDismissScreen:(AdcashRewardedVideo *)video;
    -(void) RewardedVideoWillLeaveApplication:(AdcashRewardedVideo *)video;
-   ```
+```
 
 ---
 
