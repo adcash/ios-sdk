@@ -25,7 +25,7 @@
 
 ---
 
-##Banner Advertisements
+## Banners
 
    Here is how you can integrate a banner into your app just in few steps :
    1. Import `AdcashSDK.h` header file in your view controller's file;
@@ -88,7 +88,7 @@
 
 ---
 
-##Interstitial Advertisements
+## Interstitials
 
    Here is how you can integrate an interstitial into your app just in few steps :
    1. Import `AdcashSDK.h` header file in your view controller's file;
@@ -133,7 +133,8 @@ self.interstitial.delegate = self;
       ```
 
 ---
-##Rewarded Video Advertisements
+
+## Rewarded Videos
 
    Here is how you can integrate a rewarded video into your app just in few steps :
    1. Import `AdcashSDK.h` header file into your view controllers file;
@@ -161,7 +162,7 @@ self.interstitial.delegate = self;
    [self.video playRewardedVideoFrom:self];
    ```
 
-   >Example below
+   > Example below
 
     ```objc
     -(void)rewardedVideoDidReceiveAd:(AdcashRewardedVideo *)rewardedVideo
@@ -174,6 +175,7 @@ self.interstitial.delegate = self;
    5. To use ad events:
 
     _**(Required)**_
+
     ```objc
     -(void)rewardedVideoDidComplete:(AdcashRewardedVideo *)rewardedVideo withReward:(int)reward;
     ```
@@ -190,6 +192,7 @@ self.interstitial.delegate = self;
     ```
 
     _**(Optional)**_ You can catch status updates from your video by implementing the optional methods in  `AdcashRewardedVideoDelegate` protocol:
+
    ```objc
    -(void) RewardedVideoDidReceiveAd: (AdcashRewardedVideo *)video;
    -(void) RewardedVideoDidFailToReceiveAd:(AdcashRewardedVideo *)video withError:(NSError *)error;
@@ -200,7 +203,8 @@ self.interstitial.delegate = self;
    ```
 
 ---
-##Native Advertisements
+
+## Native Advertisements
 
 Native is an ad format that is rendered by the publisher, allowing them to give users a unique experience with finely tuned look and design.
 
@@ -274,7 +278,7 @@ Here is how you can integrate a native ad into your app just in few steps :
 For detailed implementation and examples, check our [**Example Project**](https://github.com/adcash/ios-sdk/tree/master/AdcashNativeExample).
 
 
-##App Transport Security
+## App Transport Security
 
 With the release of iOS 9, Apple introduced a new default setting, called App Transport Security(ATS). ATS requires apps to make network connection only over SSL. It also allows specific encryption ciphers,SSL version and key length to be used when creating HTTPS connections.
 
@@ -323,8 +327,8 @@ While Adcash acknowledges the need for secure connections, our ad network is not
    ![Alt text](http://i0.wp.com/developer.adca.sh/wp-content/uploads/2015/10/app_transport_security_option2.png)
    >If you do not follow the above instructions for apps built on Xcode 7, monetisation will be severely impacted as some connections might fail resulting in the ads not rendering.
 
-##License
+## License
 [License](https://github.com/adcash/ios-sdk/blob/master/LICENSE.md)
 
-##Support
+## Support
 If you need any support or assistance you can contact us by sending email to mobile@adcash.com.
